@@ -16,7 +16,7 @@ class Produ extends Model
     	return $this->belongsTo(SubCate::class, 'sub_cate_id');
     }
     public static function obtenerProductos($id){
-        return Produ::where('sub_cate_id', '=', $id)->select('nombre','id')->get();
+        return Produ::where('sub_cate_id', '=', $id)->select('nombre','id', 'imagen')->get();
     }
     protected $table = 'produ';
     protected $fillable = [

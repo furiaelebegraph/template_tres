@@ -14,7 +14,7 @@ class SubCate extends Model
     }
 
     public static function obtenerSubCategoria($id){
-        return SubCate::where('cate_id', '=', $id)->select('nombre','id')->get();
+        return SubCate::where('cate_id', '=', $id)->select('nombre','id', 'imagen')->get();
     }
 	protected $table = 'subcate';
     protected $fillable = [

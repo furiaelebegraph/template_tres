@@ -10,7 +10,7 @@ class Ima extends Model
     	return $this->belongsTo(Produ::class, 'produ_id');
     }
     public static function obtenerImagenes($id){
-    	return Ima::where('produ_id', '=', $id)->select('imagen','id')->orderBy('orden', 'asc')->get();
+    	return Ima::where('produ_id', '=', $id)->select('imagen','id', 'nombre')->orderBy('orden', 'asc')->get();
     }
 	protected $table = 'imgs';
     protected $fillable = [

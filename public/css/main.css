@@ -17,8 +17,8 @@
     font-weight: 400;
 }
 
-html{
-    background: url('../img/halftone.jpg');
+body {
+    background: url(../img/sayagata-400px.png) repeat left top scroll;
 }
 
 
@@ -77,9 +77,8 @@ html{
 }
 
 .titulo_3{
-    font-weight: 900;
     color: #4E4E4E;
-    font-family: exo, sans-serif;
+    font-family: open, sans-serif;
     text-align: center;
     line-height: 40px;
     font-size: 33px;
@@ -278,6 +277,10 @@ html{
     padding: 5px;
 }
 
+.padding_50{
+    padding: 50px 0;
+}
+
 .iconos_tel{
     width: 20px;
 }
@@ -295,11 +298,10 @@ html{
 
 .titulo_especialidad{
     color: #000000;
-    font-family: exo, sans-serif;
-    text-align: center;
+    font-family: open, sans-serif;
     line-height: 29px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 33px;
     padding-top: 10px;
 }
 
@@ -368,6 +370,19 @@ html{
     width: 100%;
     margin-top: -29%;
 }
+
+.container_slides_texto p{
+    color: #FFCD00;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+.container_slides_texto p span{
+    font-size: 30px;
+    line-height: 54px;
+    font-weight: bold;
+}
+
 @media (min-width: 768px){
     .navbar-toggleable-sm .navbar-nav .nav-link {
         padding-bottom:  30px;
@@ -376,20 +391,45 @@ html{
         padding-left: 25px;
     }
     .container_slides_texto{
-        max-width: 450px;
+        max-width: 550px;
         width: 100%;
-        margin-top: -25%;
+        margin-top: -30%;
         margin-left: 100px;
+    }
+
+
+
+    .container_slides_texto p{
+        font-size: 31px;
+    }
+
+    .container_slides_texto p span{
+        font-size: 45px;
     }
 }
 
-
-.container_slides_texto p{
-    color: #FFCD00;
+#map {
+    height: 400px;
+    width: 100%;
 }
 
-.container_slides_texto p span{
-    font-size: 30px;
+.form-control{
+    background-color:#FFCD00;
+    color: #7F7F7F;
+    border-color:#FFCD00;
 }
+
+.form-control:focus {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #FFCD00;
+    outline: 0;
+}
+
+.contenedor_amarillo{
+    background-color: #FFCD00;
+    width: 100%;
+}
+
 
 /*  TEMPLATE 2  */
